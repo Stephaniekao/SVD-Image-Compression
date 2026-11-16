@@ -55,7 +55,7 @@ Run the following commands from the main repository folder.
 ### Real Image Analysis
 
 ```bash
-python src/image_analysis.py
+python src/image_analysis.py data/photo.jpeg
 ```
 
 This code reads the original image and analyzes its size and RGB pixel values. It also generates the figures used in our report.
