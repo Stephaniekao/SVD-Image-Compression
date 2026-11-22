@@ -148,3 +148,32 @@ Our report is written in LaTeX on Overleaf.
 - [Iteration 3 Report (PDF)](docs/iteration3.pdf)
 
 The updated Excel project plan is in the `docs` folder.
+
+
+## Chengyuan Liu Iteration 3 additions
+
+### Small worked example (Q1, Q2)
+
+```bash
+python src/small_example.py
+```
+
+Computes the SVD of A = [[3, 0], [4, 5]] step by step with exact fractions, checks it by substitution, then runs `my_svd_power` on the same matrix and compares with the exact values and `numpy.linalg.svd`.
+
+### Real data (Q5)
+
+```bash
+python src/run_real.py
+```
+
+Loads `data/photo.jpeg` as a grayscale matrix in [0, 1], runs `my_svd_power` (k = 50), compares with `numpy.linalg.svd`, prints the energy, error and storage cost for k = 2 (95% energy), 5, 16 (99% energy), 20 and 50, and saves `figures/real_energy.png` and `figures/real_reconstructions.png`.
+
+### Assumption checks
+
+```bash
+python src/check_assumptions.py
+```
+
+Checks the four Iteration 2 assumptions on the simulation first, then on the real image, and saves `figures/assumption_checks.png`.
+
+`src/verify.py` holds the shared `report(name, mine, ref)` helper from the handout, so every comparison prints in the same format.
