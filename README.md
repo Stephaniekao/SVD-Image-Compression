@@ -113,7 +113,7 @@ Comparison with `numpy.linalg.svd` (120 × 80):
 
 Comparison with the truth $L$:
 
-| Size | $\|A_5 - L\|_F / \|L\|_F$ | $\|A - L\|_F / \|L\|_F$ |
+| Size | $\Vert A_5 - L\Vert_F / \VertL\Vert_F$ | $\VertA - L\Vert_F / \VertL\Vert_F$ |
 |---|---:|---:|
 | 60 × 40 | 2.01e-03 | 4.28e-03 |
 | 120 × 80 | 1.48e-03 | 4.78e-03 |
