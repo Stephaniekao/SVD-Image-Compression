@@ -109,7 +109,7 @@ Comparison with `numpy.linalg.svd` (120 × 80):
 | $\sigma_1, \dots, \sigma_5$ | 7.11e-14 |
 | $U$ (signs aligned) | 2.61e-12 |
 | $V$ (signs aligned) | 3.03e-12 |
-| Tail sum $\Vert A - A_5\Vert _F^2$ vs $\sum_{i>5}\sigma_i^2$ | 1.78e-15 |
+| Squared Frobenius reconstruction error versus sum of squared discarded singular values | 1.78e-15 |
 
 Comparison with the truth $L$:
 
