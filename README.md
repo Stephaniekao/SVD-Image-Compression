@@ -78,7 +78,7 @@ python src/check_simulation.py
 
 Runs the from-scratch SVD on the Iteration 2 simulation (120 × 80, rank 5 plus noise 0.01, seed 0) in three parts:
 
-- **Part 1:** compares $\sigma_i$, $U$ and $V$ (signs aligned) with `numpy.linalg.svd`, and checks $\|A - A_5\|_F^2 = \sum_{i>5} \sigma_i^2$.
+- **Part 1:** compares $\sigma_i$, $U$ and $V$ (signs aligned) with `numpy.linalg.svd`, and checks $\Vert A - A_5\Vert _F^2 = \sum_{i>5} \sigma_i^2$.
 - **Part 2:** compares the rank-5 approximation with the noise-free truth $L$ for four sizes and saves `figures/sim_error_vs_size.png`.
 - **Part 3:** stress test with $k = 8$, showing slow convergence when $\sigma_{i+1}/\sigma_i$ is close to 1.
 
@@ -109,11 +109,11 @@ Comparison with `numpy.linalg.svd` (120 × 80):
 | $\sigma_1, \dots, \sigma_5$ | 7.11e-14 |
 | $U$ (signs aligned) | 2.61e-12 |
 | $V$ (signs aligned) | 3.03e-12 |
-| Tail sum $\|A - A_5\|_F^2$ vs $\sum_{i>5}\sigma_i^2$ | 1.78e-15 |
+| Tail sum $\Vert A - A_5\Vert _F^2$ vs $\sum_{i>5}\sigma_i^2$ | 1.78e-15 |
 
 Comparison with the truth $L$:
 
-| Size | $\Vert A_5 - L\Vert_F / \VertL\Vert_F$ | $\VertA - L\Vert_F / \VertL\Vert_F$ |
+| Size | $\Vert A_5 - L\Vert _F / \Vert L\Vert _F$ | $\Vert A - L\Vert _F / \Vert L\Vert _F$ |
 |---|---:|---:|
 | 60 × 40 | 2.01e-03 | 4.28e-03 |
 | 120 × 80 | 1.48e-03 | 4.78e-03 |
