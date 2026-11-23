@@ -184,7 +184,7 @@ We use `np.random.default_rng(0)` to fix the random seed. `simulate_low_rank()` 
 Our report is written in LaTeX on Overleaf.
 
 - [Iteration 2 Report (PDF)](docs/iteration2.pdf)
-- [Iteration 3 Report (PDF)](docs/iteration3.pdf)
+- [Iteration 3 Report (PDF)](docs/iteration_2_and_3.pdf)
 
 The updated Excel project plan is in the `docs` folder.
 
